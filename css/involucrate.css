@@ -1,0 +1,124 @@
+.gris{
+	color: #92ADC6;
+}
+
+.fd-gris{
+	background-color: #92ADC6;
+}
+
+.fd-azul{
+	background-color: #1F75B8;
+}
+
+.fd-celeste{
+	background-color: #6CC9F2;
+}
+
+.fd-verde{
+	background-color: #99C93C;
+}
+
+.fd-tomate{
+	background-color: #F7931D;
+}
+
+.fd-amarillo{
+	background-color: #EDE837;
+}
+
+.fd-verde1{
+	background-color: #39B349;
+}
+
+.fd-azul1{
+	background-color: #6CC9F2;
+}
+
+.descarga{
+	color: white;
+	font-size: 25px;
+}
+
+.descarga:hover{
+	color: #1F75B8;
+	font-size: 25px;
+}
+
+.seccion1{
+	padding-top: 40px;
+    padding-bottom: 50px;
+}
+.seccion2{
+	padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.seccion2-aux{
+	padding-top: 30px;
+    padding-bottom: 30px;
+}
+.vertical{
+	writing-mode: vertical-lr;
+	transform: rotate(270deg);
+}
+
+.vertical1{
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+
+button.btn-enviar{
+	background-color: transparent;
+	border:none;
+	font-size: 60px;
+}
+
+@media screen and (max-width:750px ) {
+	.vertical{
+	writing-mode: vertical-lr;
+	transform: rotate(0deg);
+	}
+
+	button.btn-enviar{
+	background-color: transparent;
+	border:none;
+	font-size: 18px;
+	margin-top: 25px;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	}
+
+	.seccion2{
+	padding-top: 30px;
+    padding-bottom: 30px;
+	}
+}
+
+button.btn-aux{
+	background-color: transparent;
+	border:none;
+	font-size: 25px;
+	margin-top: 25px;
+	border-radius: 5px;
+	padding: 6px 10px 6px 10px;
+}
+
+button.btn-aux:hover{
+	background-color: transparent;
+	border:none;
+	font-size: 25px;
+	margin-top: 25px;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+
+}
+
+
+@media screen and (min-width:750px ) {
+	.formulario{
+	width:1000px;
+	padding-left:400px;
+	}
+}

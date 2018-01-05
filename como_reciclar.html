@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reciveci</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo_menu.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/inicio.css">  
+    
+    
+</head>
+<header >
+		<div class=" menu_bar centrar" style="margin-top: 20px;">
+			<a href="#" class="bt-menu name-logo "><img src="images/logo.png" width="150" alt="logo ReciVeci"><img class="redondear" src="images/menu_icon.png" width="20"><!--/span--></a>
+		</div>
+		<nav class="justify-content-between">
+			
+			<ul>
+				<li class="name-logo" style="margin-top: 0"><img src="images/logo.png" width="150" alt="logo_simbolo"></li>
+				<li ><a href="index.html" class="celeste">Inicio</a></li>
+				<li><a href="que_hacemos.html" class="celeste">¿Qué hacemos?</a></li>
+				<li><a href="como_reciclar.html" class="celeste">¿Cómo reciclar?</a></li>
+				<li><a href="conoce_a_tu_reciclador.html" class="celeste">Conoce a tu reciclador</a></li>
+				<li><a href="nosotros.html" class="celeste">¿Quíenes somos?</a></li>
+				<!--li><a href="involucrate.html" class="celeste">Involúcrate</a></li-->
+			</ul>
+		</nav>
+	</header>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="css/como_reciclar.css">
+<link rel="stylesheet" type="text/css" href="css/animacion_reciclar.css">
+
+<section id="reciclar1"  >
+	<div class="centrar ">
+		<br>
+		<p class="titulo celeste negrilla">QUÉ Y CÓMO SEPARAR</p>
+		<h3 class="celeste subtitulo">en base al reciclaje en <span class="negrilla">Ecuador</span></h3>
+		<p class="parrafo-1 texto">Por falta de empresas recicladoras, poca información o poca convenienvia<br>económica, las recicladoras de base no siempre recogen todos los residuos<br>reciclables. Si tienes algún residuo reciclable que tu recicladora no recoge, habla con<br>tu recicladora y conéctala con ReciVeci para entregarle más información.
+		</p>
+	</div>
+</section>
+
+<section id="reciclar2" >
+	<br>
+	<div class="row centrar">
+		<div class="col-md-3"></div>
+		<div class="col" id="div-reciclable" style="text-align: center;" >
+			<button class="btn-reciclar" onclick="reciclable()" id="img-reciclable">
+				 <span><img id="imgr" class="imgr" src="images/reciclar/corazon.PNG"></span>
+			</button>
+			<h4  class="negrilla gris texto espacio-parrafo" onclick="reciclable()">RECICLABLES</h4>
+
+			<!--input type="button" class="btn fd-verde blanco negrilla " name="btn_reciclable" value="Reciclable" onclick="reciclable()"-->
+		</div>
+		<div class="col" style="text-align: center;" id="div-no-reciclable">
+			<button class="btn-ordinario1" onclick="no_reciclable()" id="img-no-reciclable">
+				 <span class="texto"><img id="imgnr" class="imgnr" src="images/reciclar/ordinarios.png" ></span>
+			</button>
+			<h4  class="negrilla gris texto espacio-parrafo" onclick="no_reciclable()">NO<br>RECICLABLES</h4>
+			<!--input type="button" class="btn fd-tomate blanco negrilla " name="btn_no_reciclable" value="No Reciclable" onclick="no_reciclable()"-->
+		</div>
+		<div class="col" style="text-align: center;" id="div-peligrosos">
+			<button class="btn-especiales" onclick="especiales()" id="img-peligrosos">
+				 <span class="texto"><img id="imgp" class="imgp" src="images/reciclar/peligroso.png" ></span>
+			</button>
+			<h4  class="negrilla gris texto espacio-parrafo" onclick="especiales()">PELIGROSOS<br>Y ESPECIALES</h4>
+			<!--input type="button" class="btn fd-rojo blanco negrilla " name="btn_especiales" value="Peligrosos y Especiales" onclick="especiales()"-->
+		</div>
+		<div class="col-md-3 "></div>
+	</div>
+	<br><br>
+	<div style="float: none; position: relative; left: 6%;" class="centrar" onchange="ocultar()" id="categorias">
+		<ul class="nav " id="myTab" role="tablist">
+			<li></li>
+		  <li class="nav-item " id="plastico" >
+		    <a class="nav-link active" id="plastico-tab" data-toggle="tab" href="#plastico" role="tab" aria-controls="plastico" aria-selected="true" onclick="activo('plastico');">
+		    	<img src="images/reciclar/categorias/plastico.png" width="100"><br><br><span id="plastico" class="negrilla gris">PLÁSTICO</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="papel">
+		    <a class="nav-link" id="papel-tab" data-toggle="tab" href="#papel" role="tab" aria-controls="papel" aria-selected="false" onclick="activo('papel');">
+		    	<img src="images/reciclar/categorias/papel.png" width="100"><br><br><span id="papel" class="negrilla gris">PAPEL</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="chatarra">
+		    <a class="nav-link" id="chatarra-tab" data-toggle="tab" href="#chatarra" role="tab" aria-controls="chatarra" aria-selected="false" onclick="activo('chatarra');" >
+		    	<img src="images/reciclar/categorias/chatarra.png" width="100"><br><br><span id="chatarra" class="negrilla gris">CHATARRA</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="tech" >
+		    <a class="nav-link active" id="tech-tab" data-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="false" onclick="activo('tech');">
+		    	<img src="images/reciclar/categorias/tech.png" width="100"><br><br><span id="tech" class="negrilla gris">TECH</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="vidrio">
+		    <a class="nav-link" id="vidrio-tab" data-toggle="tab" href="#vidrio" role="tab" aria-controls="vidrio" aria-selected="false" onclick="activo('vidrio');">
+		    	<img src="images/reciclar/categorias/vidrio.png" width="100"><br><br><span id="vidrio" class="negrilla gris">VIDRIO</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="compuesto" >
+		    <a class="nav-link active" id="compuesto-tab" data-toggle="tab" href="#compuesto" role="tab" aria-controls="compuesto" aria-selected="false" onclick="activo('compuesto');">
+		    	<img src="images/reciclar/categorias/compuesto.png" width="100"><br><br><span id="compuesto" class="negrilla gris" >COMPUESTO</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="organico">
+		    <a class="nav-link" id="organico-tab" data-toggle="tab" href="#organico" role="tab" aria-controls="organico" aria-selected="false" onclick="activo('organico');">
+		    	<img src="images/reciclar/categorias/organico.png" width="100"><br><br><span id="organico" class="negrilla gris">ORGÁNICO</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="peligroso">
+		    <a class="nav-link" id="peligroso-tab" data-toggle="tab" href="#peligroso" role="tab" aria-controls="peligroso" aria-selected="false" onclick="activo('peligroso');">
+		    	<img src="images/reciclar/categorias/peligroso.png" width="100"><br><br><span id="peligroso" class="negrilla gris">PELIGROSO</span>
+		    </a>
+		  </li>
+		  <li class="nav-item" id="especiales">
+		    <a class="nav-link" id="especiales-tab" data-toggle="tab" href="#especiales" role="tab" aria-controls="especiales" aria-selected="false" onclick="activo('especiales');">
+		    	<img src="images/reciclar/categorias/especiales.png" width="110"><br><br><span id="especiales" class="negrilla gris">ESPECIALES</span>
+		    </a>
+		  </li>
+		  
+		</ul>
+	</div>
+	
+	<div id="content_categoria" class="centrar" onchange="ocultar()">
+		<br><br>
+		<div class="row ">
+			<div class="col" id="plastico-content" >
+
+				<div class="row ">
+					<div class="col">
+						<div class="view view-ninth">
+							<img src="images/reciclar/categorias/reciclable/plastico/g208.png" width="200" height="200">
+							<div class="mask mask-1"></div>
+							<div class="mask mask-2"></div>
+							<div class="content">
+								<p><br><br>Enjuaga los envases<br>y entregalos a tu<br>reciclador de base</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="view view-ninth">
+							<img src="images/reciclar/categorias/reciclable/plastico/g220.png" width="200" height="200">
+							<div class="mask mask-1"></div>
+							<div class="mask mask-2"></div>
+							<div class="content">
+								<p><br><br>Enjuaga los envases<br>y entregalos a tu<br>reciclador de base</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col" id="papel-content">
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/reciclable/papel/periodico.jpg" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col"  id="chatarra-content">
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/reciclable/chatarra/aluminio.jpg" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="compuesto-content" >
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/no_reciclable/compuesto/tetrapack.jpg" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="organico-content" >
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/no_reciclable/organico/organico.png" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="peligroso-content" >
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/no_reciclable/peligroso/peligroso.png" width="200" height="200">
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="tech-content" >
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/reciclable/tech/telefono.jpg" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="vidrio-content" >
+				<div class="row">
+					<div class="col" >
+						<img src="images/reciclar/categorias/reciclable/vidrio/vidrio.jpg" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" id="especiales-content" >
+				<div class="row">
+					<div class="col" >
+						<img src="http://duncanlock.net/images/posts/better-figures-images-plugin-for-pelican/dummy-200x200.png" width="200" height="200">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+</section>
+
+<section id="reciclar3">
+	<div class="centrar">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<img src="images/fondoazul.png" width="100%" height="250px">
+		      <div class="carousel-caption  d-md-block d-sm-block">
+			    <h1 class="negrilla titulo">TIPS</h1>
+			    <br>
+			    <p class="parrafo texto">EVITA EL USO DEL SORBETE. CASI NUNCA SE RECICLA, <br>
+			    	TIENE UN EFECTO ENORME EN EL MEDIO AMBIENTE, <br>Y NOCUMPLE UNA FUNCIÓN HIGIÉNICA.</p>
+			  </div>
+		    </div>
+		    <div class="carousel-item">
+		    	<img src="images/fondoazul.png" width="100%" height="250px">
+		      <div class="carousel-caption d-md-block d-sm-block"">
+			    <h1 class="negrilla titulo">TIPS</h1>
+			    <br>
+			    <p class="parrafo texto">EVITA EL USO DEL SORBETE. CASI NUNCA SE RECICLA, <br>
+			    	TIENE UN EFECTO ENORME EN EL MEDIO AMBIENTE, <br>Y NOCUMPLE UNA FUNCIÓN HIGIÉNICA.</p>
+			  </div>
+		    </div>
+		    <div class="carousel-item">
+		    	<img src="images/fondoazul.png" width="100%" height="250px">
+		      <div class="carousel-caption d-md-block d-sm-block"">
+			    <h1 class="negrilla titulo">TIPS</h1>
+			    <br>
+			    <p class="parrafo texto">EVITA EL USO DEL SORBETE. CASI NUNCA SE RECICLA, <br>
+			    	TIENE UN EFECTO ENORME EN EL MEDIO AMBIENTE, <br>Y NOCUMPLE UNA FUNCIÓN HIGIÉNICA.</p>
+			  </div>
+		    </div>
+		  </div>
+
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</div>
+</section>
+
+<section id="reciclar4" hidden>
+	<div class="centrar ">
+		<br>
+		<p class="titulo celeste negrilla">¿CUÁNTO HEMOS RECICLADO JUNTOS?</p>
+		<h3 class="celeste">en toneladas por los recicladores activos en ReciVeci</h3>
+		<img src="images/reciclar/estadisticas.png">
+	</div>
+</section>
+
+<script type="text/javascript" src="js/reciclarController.js"></script>
+	
+</body>
+<footer>
+	<br>
+	<div class="row">
+		<div class="col centrar">
+			<div class="mapa_sitio">
+				<p class="centrar negrilla">Mapa del Sitio</p>
+				<ul >
+					<li></li>
+					<li ><a href="index.html" class="celeste">Inicio</a></li>
+					<li><a href="que_hacemos.html" class="celeste">¿Qué hacemos?</a></li>
+					<li><a href="como_reciclar.html" class="celeste">¿Cómo reciclar?</a></li>
+					<li><a href="conoce_a_tu_reciclador.html" class="celeste">Conoce a tu reciclador</a></li>
+					<li><a href="nosotros.html" class="celeste">¿Quíenes somos?</a></li>
+					<!--li><a href="involucrate.html" class="celeste">Involúcrate</a></li-->
+				</ul>	
+			</div>
+		</div>
+		
+		<div class="col ">
+			<div class="">
+				<p class="centrar negrilla">¿Tienes Alguna Duda?</p>
+				<ul  class="centrar">
+					<li></li>
+					<!--li><a href="faq">¿Qué es ReciVeci?</a></li>
+					<li><a href="faq">¿Qué es reciclaje inclusivo?</a></li>
+					<li><a href="faq">¿Cómo puedo saber si ReciVeci<br>está en mi barrio?</a></li>
+					<li><a href="faq">¿Qué es un voluntario ReciVeci?</a></li>
+					<li><a href="faq">Ver más...</a></li-->
+					<li><a href="faq.html">Preguntas Frecuentes</a></li>
+				</ul>
+			</div>
+			<!--br>
+			<div class="">
+				<p class="centrar negrilla">Contáctanos</p>
+				<p class="centrar">info@reciveci.ec</p>
+			</div-->
+		</div>
+
+		<div class="col ">
+			<div class="">
+				<p class="centrar negrilla">Contáctanos</p>
+				<p class="centrar">info@reciveci.ec</p>
+			</div>
+			<br>
+			<div class="">
+				<p class="centrar negrilla">Encuéntranos</p>
+				
+				<ul id="redes" class="centrar">
+					<li></li>
+					<li><a href="https://www.facebook.com/reciveci/" target="_blank"><img src="images/redes/fb_icon.png" width="40" title="Facebook"></a></li>
+					<li><a href="https://twitter.com/reciveci" target="_blank"><img src="images/redes/Twitter.png" width="40" title="Twitter"></a></li>
+					<li><a href="https://www.instagram.com/reciveci/" target="_blank"><img src="images/redes/instagram.png" width="40" title="Instagram"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCkkkJ2og0MAVj8B_AIgZtaw" target="_blank"><img src="images/redes/Youtube.png" width="40" title="Youtube"></a></li>
+
+				</ul>
+			</div>
+		</div>
+			
+	</div>
+
+</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+</html>

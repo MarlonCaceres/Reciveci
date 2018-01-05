@@ -1,0 +1,155 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+body {
+	background:#FFFFFA;
+}
+
+header {
+	width:100%;
+}
+
+header nav {
+	max-height: 1000px;
+	margin:10px auto;
+	background:#fff;
+}
+
+.menu_bar {
+	display:none;
+
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+
+header nav ul li {
+	float:left;
+
+}
+
+header nav ul li a {
+	color:#000;
+	padding:10px ;
+	display:block;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+header nav ul li span {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background:#fff;
+	font-weight: bold;
+	color:#000;
+	margin: 1px solid #fff;
+}
+
+section {
+	padding:10px;
+}
+
+hr{
+	margin-left: 65px;
+	margin-right: 65px;
+	margin-top: -7px;
+	width: 90%;
+	border: 2px solid #DfDfDf;
+}
+
+.name-logo{
+	padding-left: 110px;
+	padding-right: 150px;
+	
+	margin-bottom:  -10px;
+	color: #00A0DB;
+	font-weight: bold;
+	font-family: CENTURY GOTHIC BOLD;
+	font-size: 2em;
+}
+
+@media screen and (max-width:750px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+
+	}
+
+	li:first-child{
+		visibility: hidden;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		background:#fff;
+		color:#000;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		padding:10px;
+		z-index: 1000;
+	}
+
+	.redondear{
+		border-radius: 3px;
+	}
+
+	.img-logo{
+		padding-top: 20px;
+	}
+
+	.menus{
+		display: inline-block;
+		line-height:inherit;
+		white-space:nowrap
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+	
+	hr{
+		visibility: hidden;
+	}
+
+	.name-logo{
+	padding-left: 100px;
+	padding-right: 150px;
+	margin-bottom:  -10px;
+	color: #00A0DB;
+	font-weight: bold;
+	font-family: CENTURY GOTHIC BOLD;
+	font-size: 12px;
+	}
+}

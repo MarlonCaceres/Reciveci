@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reciveci</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo_menu.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/inicio.css">  
+    
+    
+</head>
+<header >
+		<div class=" menu_bar centrar" style="margin-top: 20px;">
+			<a href="#" class="bt-menu name-logo "><img src="images/logo.png" width="150" alt="logo ReciVeci"><img class="redondear" src="images/menu_icon.png" width="20"><!--/span--></a>
+		</div>
+		<nav class="justify-content-between">
+			
+			<ul>
+				<li class="name-logo" style="margin-top: 0"><img src="images/logo.png" width="150" alt="logo_simbolo"></li>
+				<li ><a href="index.html" class="celeste">Inicio</a></li>
+				<li><a href="que_hacemos.html" class="celeste">¿Qué hacemos?</a></li>
+				<li><a href="como_reciclar.html" class="celeste">¿Cómo reciclar?</a></li>
+				<li><a href="conoce_a_tu_reciclador.html" class="celeste">Conoce a tu reciclador</a></li>
+				<li><a href="nosotros.html" class="celeste">¿Quíenes somos?</a></li>
+				<li><a href="involucrate.html" class="celeste">Involúcrate</a></li>
+			</ul>
+		</nav>
+	</header>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="css/involucrate.css">
+
+<div id="section1" class="fd-tomate blanco centrar seccion1" hidden>
+	<div class="row">
+		<div class="col">
+			<h1 class="negrilla">Cómo ser un ReciVeci.</h1>		
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-7">
+			<!--h3>Quieres empezar a ser un ReciVeci en tu barrio.</h3-->
+			<h3 style="padding-top: 20px;">Aprende como puedes implementar ReciVeci en tu barrio.</h3>		
+		</div>
+		<div class="col-md-3">
+			<span><a href="files/FAQs.docx" download="Manual ReciVeci" class="descarga">Descarga el<br>Manual ReciVeci
+			<br>		
+			<img src="images/download.svg" width="40"></a></span>			
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	
+</div>
+
+<div id="section2" class="fd-azul seccion2-aux">
+	<div class="centrar row  blanco">
+		<div class="col">
+			<!--h2 class="negrilla">Voluntarios y Colaboradores</h2-->
+			<h1 class="negrilla">Tienes alguna sugerencia, inquietud o quieres<br> ser parte del equipo de Reciveci déjanos un mensaje. </h1>
+		</div>
+	</div>
+	<br>
+	<!--form action="#" method="get" class="">
+		<div class="form-row " id="formulario_voluntario">	
+			<div class="col-md-1"></div>
+			<div class="col-md-4" class="form-group">
+				<input type="text" name="Nombres" class="form-control" placeholder="Juan José Flores">
+				<input type="text" name="Teléfono" class="form-control" placeholder="0221234567">
+				<input type="text" name="Teléfono" class="form-control" placeholder="0221234567">
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+				<input type="text" name="area" class="form-control" placeholder="Aréa">
+				<input type="text" name="Correo" class="form-control" placeholder="JuanJose@reciveci.com">
+				<input type="text" name="Teléfono" class="form-control" placeholder="0221234567">
+			</div>
+			<div class="col-md-2 centrar">
+
+				<button class="vertical btn-enviar negrilla blanco" >ENVIAR</button>
+			</div>
+		</div>
+	</form-->
+
+	<!--div class="centrar">
+		{!! Form::open(['route'=>'mail.store','method'=>'POST','class'=>'formulario']) !!}
+	        <div class="form-group col-md-12 col-sm-12">
+					{!!Form::text('Nombres',null,['class'=>'form-control','placeholder'=>'Nombre: Juan José Flores'])!!}
+			</div>
+			<div class="form-group col-md-12 col-sm-12">
+					{!!Form::text('Correo',null,['class'=>'form-control','placeholder'=>'Correo: Juan.Jose@reciveci.ec'])!!}
+			</div>
+			<div class="form-group col-md-12 col-sm-12" hidden>
+					{!!Form::select('Tipo',['1'=>'Diseño Web y Móvil',
+											'2'=>'Desarrollo de Sistemas',
+											'3'=>'Capacitaciones',
+											'4'=>'Voluntario'],
+									null,['class'=>'form-control','placeholder'=>'Seleccione una opción'])!!}
+			</div>
+			<div class="form-group col-md-12 col-sm-12">
+					{!!Form::textarea('Mensaje',null,['class'=>'form-control','placeholder'=>'Su mensaje aquí.'])!!}
+			</div>
+			<button class="btn-aux negrilla blanco" >ENVIAR</button>
+	    {!! Form::close() !!}	
+	</div-->
+	
+
+  
+	<div class="centrar">
+		<form action ="guardar()" method="POST" class="formulario">
+			<div class="form-group col-md-12 col-sm-12">
+					<input type="text" name="Nombres" class="form-control " placeholder="Nombre: Juan José Flores">
+			</div>
+			<div class="form-group col-md-12 col-sm-12">
+					<input type="text" name="Correo" class="form-control" placeholder="Correo: Juan.Jose@reciveci.ec">
+			</div>
+			<div class="form-group col-md-12 col-sm-12" hidden>
+					<select name="tipo_vol" class="form-control" hidden>
+					<option>Seleccione una opción</option>
+					<option>Diseño Web y Móvil</option>
+					<option>Desarrollo de Sistemas</option>
+					<option>Capacitaciones</option>
+					<option>Voluntario</option>
+				</select>
+			</div>
+			<div class="form-group col-md-12 col-sm-12">
+					<textarea class="form-control" rows="5" cols="81" placeholder="Su mensaje aquí." name="mensaje"></textarea>
+			</div>
+			<button class="btn-aux negrilla blanco" >ENVIAR</button>		
+		</form>		
+	</div>
+	
+</div>
+
+	
+</body>
+<footer>
+	<br>
+	<div class="row">
+		<div class="col centrar">
+			<div class="mapa_sitio">
+				<p class="centrar negrilla">Mapa del Sitio</p>
+				<ul >
+					<li></li>
+					<li ><a href="index.html" class="celeste">Inicio</a></li>
+					<li><a href="que_hacemos.html" class="celeste">¿Qué hacemos?</a></li>
+					<li><a href="como_reciclar.html" class="celeste">¿Cómo reciclar?</a></li>
+					<li><a href="conoce_a_tu_reciclador.html" class="celeste">Conoce a tu reciclador</a></li>
+					<li><a href="nosotros.html" class="celeste">¿Quíenes somos?</a></li>
+					<li><a href="involucrate.html" class="celeste">Involúcrate</a></li>
+				</ul>	
+			</div>
+		</div>
+		
+		<div class="col ">
+			<div class="">
+				<p class="centrar negrilla">¿Tienes Alguna Duda?</p>
+				<ul  class="centrar">
+					<li></li>
+					<!--li><a href="faq">¿Qué es ReciVeci?</a></li>
+					<li><a href="faq">¿Qué es reciclaje inclusivo?</a></li>
+					<li><a href="faq">¿Cómo puedo saber si ReciVeci<br>está en mi barrio?</a></li>
+					<li><a href="faq">¿Qué es un voluntario ReciVeci?</a></li>
+					<li><a href="faq">Ver más...</a></li-->
+					<li><a href="faq.html">Preguntas Frecuentes</a></li>
+				</ul>
+			</div>
+			<!--br>
+			<div class="">
+				<p class="centrar negrilla">Contáctanos</p>
+				<p class="centrar">info@reciveci.ec</p>
+			</div-->
+		</div>
+
+		<div class="col ">
+			<div class="">
+				<p class="centrar negrilla">Contáctanos</p>
+				<p class="centrar">info@reciveci.ec</p>
+			</div>
+			<br>
+			<div class="">
+				<p class="centrar negrilla">Encuéntranos</p>
+				
+				<ul id="redes" class="centrar">
+					<li></li>
+					<li><a href="https://www.facebook.com/reciveci/" target="_blank"><img src="images/redes/fb_icon.png" width="40" title="Facebook"></a></li>
+					<li><a href="https://twitter.com/reciveci" target="_blank"><img src="images/redes/Twitter.png" width="40" title="Twitter"></a></li>
+					<li><a href="https://www.instagram.com/reciveci/" target="_blank"><img src="images/redes/instagram.png" width="40" title="Instagram"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCkkkJ2og0MAVj8B_AIgZtaw" target="_blank"><img src="images/redes/Youtube.png" width="40" title="Youtube"></a></li>
+
+				</ul>
+			</div>
+		</div>
+			
+	</div>
+
+</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+</html>

@@ -1,0 +1,29 @@
+
+.centrar{
+	text-align: center;
+	align-content: middle;
+}
+
+.titulo{
+	font-size: 20px;
+	font-weight: bold;
+	color: #92ADC6;
+	padding-top: 10px;
+}
+
+.fd-azul{
+	background-color: #1F75B8;
+	
+}
+.fd-blanco{
+	background-color: #fff;
+}
+
+.blanco{
+	color: #fff;
+}
+
+img.recicladores{
+	border-radius: 150px;
+}
+

@@ -1,0 +1,214 @@
+body{
+	background-color: #fff;
+	font-family: Century Gothic;
+}
+
+@font-face{
+	font-family: 'Century Gothic';
+    src: url(../CenturyGothicRegular.ttf) format('truetype');
+}
+
+.letra{
+	font-family: CENTURY GOTHIC BOLD;
+}
+
+.celeste{
+	color: #00A0DB;
+}
+
+.blanco{
+	color: #fff;
+}
+
+.letra{
+	font-family: CENTURY GOTHIC BOLD;
+}
+
+.centrar{
+	text-align: center;
+	align-content: middle;
+}
+
+.derecha{
+	text-align: right;
+	align-content: right;
+}
+
+.fondo{
+	background: url('../images/inicio/headerbasura.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.negrilla{
+	font-weight: bold;
+}
+
+.reciclaje1{
+	margin-top: 0px;
+}
+
+.letra-p1{
+	font-size: 20px;
+}
+
+.letra-p1-negrilla{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+p{
+	line-height: 1.2;
+}
+
+section{
+	padding-top: 0;
+	padding-bottom:  0;
+}
+
+.fondo3{
+	background: url('http://localhost/reciveci/ReciVeciWeb/public/images/inicio/proceso1_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.letra-p3{
+	font-size: 38px;
+	letter-spacing: 4px;
+	padding-right: 80px;
+}
+
+.fondo5{
+	background-color: #99C93C;
+}
+
+.letra-p5{
+	font-size: 38px;
+	letter-spacing: 4px;
+	padding-right: 80px;
+}
+
+.situacion{
+	text-align: center;
+	margin:auto;
+	margin-top: 20px;
+}
+
+.afectacion{
+	text-align: center;
+	margin:auto;
+	margin-top: 20px;	
+}
+
+.img-afectacion{
+	width:120px;
+	height:120px;
+}
+
+.letra-p6{
+
+	font-size: 38px;
+	letter-spacing: 4px;
+	padding-right: 80px;
+}
+
+.practica{
+	text-align: center;
+	margin:auto;
+	margin-top: 20px;
+}
+
+.img-10:hover{
+	filter: opacity(0.7);
+	-webkit-transform:rotateY(360deg);
+	-webkit-transform-style:preserve-3d;
+	transform: rotateY(360deg);
+	transform-style: preserve-3d;
+	border-radius: 25%;
+	-webkit-border-radius:25%;
+	box-shadow: 0px 0px 15px 15px #EDE837;
+	-webkit-box-shadow: 0px 0px 15px 15px #EDE837;
+	
+	transition: all 1.5s ease-in-out;
+}
+
+footer{
+	background-color: #fff;
+	color: #1F75B8;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+li{
+	list-style: none;
+}
+
+.mapa_sitio{
+	padding-left: 30px;
+
+}
+
+#redes ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+#redes li{
+	display: inline;
+	text-align: center;
+	margin: 0 5px 0 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.fd-espacio{
+	padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.espacio{
+	padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.espacio-parrafo{
+	padding-top: 20px;
+}
+
+@media screen and (max-width:750px ) {
+	.fondo{
+		background: url('../images/inicio/headerbasura.png');
+		background-repeat: no-repeat;
+		background-size: 180%;
+		background-position: bottom;
+	}
+
+	.letra-p1-negrilla{
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.letra-p1{
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.fd-espacio{
+		padding-top: 0px;
+	    padding-bottom: 10px;
+	}
+
+	.espacio{
+		padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+
+	.titulo{
+		font-size: 28px;
+	}
+
+	.img-situacion{
+		max-width: 100%;
+	}
+}
